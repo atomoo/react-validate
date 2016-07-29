@@ -9,20 +9,36 @@ require("../src/style/render.less");
 var App = React.createClass({
   render: function () {
     return (
-      <Form onSubmit={() => {console.log("handle form submit!")}}>
-        <FormItem
-          label="nickname:"
-          validTip="valid!"
-          invalidTip="invalid!"
-          inputPlaceholder="input nickname"
-        />
-        <FormItem
-          label="mobile:"
-          validTip="valid!"
-          invalidTip="invalid!"
-          inputPlaceholder="input mobile"
-        />
-      </Form>
+      <div>
+        <Form onSubmit={() => {console.log("handle form submit!")}}>
+          <FormItem
+            label="nickname:"
+            validTip="valid!"
+            invalidTip="invalid!"
+            inputPlaceholder="input nickname"
+          />
+          <FormItem
+            label="mobile:"
+            validTip="valid!"
+            invalidTip="invalid!"
+            inputPlaceholder="input mobile"
+          />
+        </Form>
+        <Form onSubmit={() => {console.log("handle form submit!")}}>
+          <FormItem
+            label="nickname:"
+            validTip="valid!"
+            invalidTip="invalid!"
+            inputPlaceholder="input nickname"
+          />
+          <FormItem
+            label="mobile:"
+            validTip="valid!"
+            invalidTip="invalid!"
+            inputPlaceholder="input mobile"
+          />
+        </Form>
+      </div>
     );
   }
 });
