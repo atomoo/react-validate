@@ -1,0 +1,32 @@
+{
+  "name": "react-validate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ValidateFuncs.js",
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "event-emitter": "^0.3.4",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.11.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-react": "^6.11.1",
+    "css-loader": "^0.23.1",
+    "express": "^4.14.0",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "react-hot-loader": "^1.3.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "scripts": {
+    "local-render": "node test/test-server.js",
+    "local-compiler": "webpack-dev-server --config webpack.config.local.js --port 11112 --hot"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
