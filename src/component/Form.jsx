@@ -8,12 +8,11 @@ var Form = React.createClass({
     }
   },
   render: function () {
-    var _this = this;
     return (
       <div className="form_wrap">
         {
-          React.Children.map(this.props.children, function (children) {
-            return React.cloneElement(children, {ee: _this.state.ee});
+          React.Children.map(this.props.children, (children) => {
+            return React.cloneElement(children, {ee: this.state.ee});
           })
         }
         <button

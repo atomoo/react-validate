@@ -21,7 +21,6 @@ var FormItem = React.createClass({
         <label className="form_item_label">{this.props.label}</label>
         <Input
           inputPlaceholder={this.props.inputPlaceholder}
-          onSubmit={this.props.onSubmit}
           onCheckValid={this.handleInputCheckValid}
           onCheckInvalid={this.handleInputCheckInvalid}
           ee={this.props.ee}
