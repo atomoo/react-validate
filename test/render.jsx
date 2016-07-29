@@ -16,6 +16,12 @@ var App = React.createClass({
           invalidTip="invalid!"
           inputPlaceholder="input nickname"
         />
+        <FormItem
+          label="mobile:"
+          validTip="valid!"
+          invalidTip="invalid!"
+          inputPlaceholder="input mobile"
+        />
       </Form>
     );
   }
