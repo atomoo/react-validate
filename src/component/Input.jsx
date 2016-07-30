@@ -26,7 +26,6 @@ var Input = React.createClass({
     });
   },
   handleInputChange: function (e) {
-    this.props.onChange && this.props.onChange();
     this.setState({
       value: e.target.value
     });
