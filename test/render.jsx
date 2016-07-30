@@ -3,6 +3,7 @@ var ReactDOM = require("react-dom");
 
 var Form = require("../src/component/Form.jsx");
 var FormItem = require("../src/component/FormItem.jsx");
+var CheckFuncs = require("../src/CheckFuncs");
 
 require("../src/style/render.less");
 
@@ -22,6 +23,7 @@ var App = React.createClass({
             validTip="valid!"
             invalidTip="invalid!"
             inputPlaceholder="input mobile"
+            checkFunc={CheckFuncs.checkMobileValid}
           />
         </Form>
         <Form onSubmit={() => {console.log("handle form submit!")}}>

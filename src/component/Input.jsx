@@ -32,7 +32,8 @@ var Input = React.createClass({
     });
   },
   handleInputSubmit: function () {
-    var checkValid = CheckFuncs.checkNickNameValid(this.state.value);
+    var checkFunc = this.props.checkFunc || CheckFuncs.defaultCheckFunc;
+    var checkValid = checkFunc(this.state.value);
     if (checkValid == true) {
       this.props.onCheckValid();
     } else {

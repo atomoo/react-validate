@@ -24,6 +24,7 @@ var FormItem = React.createClass({
           onCheckValid={this.handleInputCheckValid}
           onCheckInvalid={this.handleInputCheckInvalid}
           ee={this.props.ee}
+          checkFunc={this.props.checkFunc}
         />
         <span className={inputTipClasses}>{this.state.inputTip}</span>
       </div>
